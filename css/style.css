@@ -252,6 +252,25 @@ section { scroll-margin-top: var(--header-h); }
 .foot-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .copy { width: 100%; color: var(--ash); font-size: .92rem; padding-top: 8px; }
 
+
+/* Floating WhatsApp button (desktop and tablet; phones use the bottom bar) */
+.wa-float {
+  position: fixed; right: 24px; bottom: 24px; z-index: 55;
+  display: inline-flex; align-items: center; gap: 10px;
+  height: 58px; padding: 0 22px 0 16px; border-radius: 100px;
+  background: #25d366; color: #06301a; text-decoration: none;
+  font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 1rem;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .55), 0 0 0 1px rgba(255, 255, 255, .12);
+  transition: background-color .18s, transform .18s;
+}
+.wa-float:hover { background: #3be07c; transform: translateY(-2px); }
+.wa-float svg { width: 30px; height: 30px; fill: none; stroke: #06301a; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+@media (max-width: 1100px) {
+  .wa-float { padding: 0; width: 58px; justify-content: center; }
+  .wa-float span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+@media (max-width: 600px) { .wa-float { display: none; } }
+
 /* Mobile quick actions */
 .quickbar { display: none; }
 
