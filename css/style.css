@@ -320,10 +320,10 @@ section { scroll-margin-top: var(--header-h); }
   .hero { padding-top: 32px; }
   .hero-grid { grid-template-columns: 1fr; min-height: 0; }
   .hero-art { order: -1; }
-  .hero-art img { width: min(250px, 66%); margin-top: -8px; margin-bottom: -24px; }
+  .hero-art img { width: min(230px, 62%); height: auto; margin: 0 auto -8px; -webkit-mask-image: radial-gradient(ellipse closest-side, #000 80%, transparent 100%); mask-image: radial-gradient(ellipse closest-side, #000 80%, transparent 100%); }
   .hero-stripes i:nth-child(1) { width: 18vw; }
   .hero-stripes i:nth-child(2) { right: 17vw; width: 4vw; }
-  .hero-stripes { bottom: auto; height: 330px; }
+  .hero-stripes { bottom: auto; height: 290px; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
   .hero-stripes i:nth-child(3) { display: none; }
   .flagships { grid-template-columns: 1fr; }
   .statement-grid { grid-template-columns: 1fr; gap: 40px; }
